@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all 0.2s linear;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 6rem;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #bbbfca;
+  position: relative;
+}
+
+/* nav bar starts here */
+
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 2rem;
+  width: 100%;
+  height: 70px;
+  background: linear-gradient(#2c74b3, #205295);
+  box-shadow: 3px 3px 10px lightslategray;
+  align-items: center;
+}
+.logo {
+  color: #eeeeee;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 40px;
+  font-family: Satisfy;
+  text-shadow: 2px 1px black;
+}
+.subtitle {
+  color: #eeeeee;
+  display: flex;
+  flex: 2;
+  font-size: 20px;
+  justify-content: flex-start;
+  display: inline;
+  margin-left: 30px;
+  font-family: Satisfy;
+  text-shadow: 2px 1px black;
+}
+header .search-bar-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 1rem 2rem;
+  background-color: #205295;
+  border-top: rgb(37, 36, 36);
+  display: flex;
+  align-items: center;
+  z-index: 1001;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .search-bar-container.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .search-bar-container #search-bar {
+  width: 100%;
+  padding: 1rem;
+  text-transform: none;
+  color: black;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+header .search-bar-container label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+}
+header .search-bar-container label:hover {
+  color: #e4cc5e;
+}
+
+.menu {
+  flex: 1;
+  list-style: none;
+  display: inline;
+  float: right;
+  /* margin-right: 35px; */
+  justify-content: right;
+}
+.menu li {
+  color: #eeeeee;
+  font-size: 20px;
+  display: inline;
+  text-decoration: none;
+  margin-right: 40px;
+  justify-content: right;
+  font-family: "Barlow Condensed";
+  text-shadow: 2px 1px black;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #eeeeee;
+  text-transform: uppercase;
+}
+
+.menu li #active {
+  color: #e4cc5e;
+}
+.menu li a:hover:not(#active) {
+  color: #e4cc5e;
+  text-decoration: underline;
+}
+header .icons i {
+  font-size: 25px;
+  margin-right: 20px;
+  color: #eeeeee;
+  cursor: pointer;
+}
+header .icons i:hover {
+  color: #e4cc5e;
+}
+
+/* nav bar ends here */
+.cover {
+  display: block;
+  padding-top: 75px;
+}
+.container {
+  display: flex;
+  padding: 2rem;
+  height: 45rem;
+  justify-content: center;
+}
+
+.container div {
+  float: left;
+  border-radius: 20px;
+  margin: auto;
+  height: 40rem;
+  width: 30rem;
+  text-align: center;
+  box-shadow: 10px 10px 10px #888a89;
+  transition: 0.5s;
+  align-items: center;
+}
+
+#place1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(https://thumbs.dreamstime.com/b/word-goa-beach-concept-holiday-background-126110526.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#place2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(https://media.istockphoto.com/id/1145883477/photo/landscape-in-himalayas-surrounded-by-deodar-tree.jpg?s=612x612&w=0&k=20&c=waoELdrOxFdQwsL_Cc1-cgdnGqnMFaZ4nNYGDWioB54=);
+  background-size: 100%;
+}
+
+#place3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(https://i.pinimg.com/736x/69/2a/5e/692a5e5b37cad644e4a620185af9f320.jpg);
+  background-size: 100%;
+}
+#place4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-image: url(https://images.unsplash.com/photo-1660918738010-295b09857f93?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fG9vdHklMkMlMjBpbmRpYXxlbnwwfDF8MHx8fDA%3D);
+  background-size: 100%;
+}
+
+.placename {
+  display: inline;
+  color: #fdffc2;
+  font-size: 50px;
+  /* -webkit-text-stroke: black;
+      -webkit-text-stroke-width: 1px; */
+  text-shadow: 2px 2px black;
+  font-family: Calibri;
+}
+.Timg .btn {
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  font-family: Calibri;
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+.Timg .btn:hover {
+  background-color: #3282b8;
+  color: white;
+}
+#kk {
+  font-size: 45px;
+}
+.aboutplace {
+  display: inline;
+  font-size: 20px;
+  color: #f6ff00;
+  padding: 1rem;
+  text-shadow: 2px 1px 2px black;
+  font-family: Calibri;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#plansfeild {
+  height: 12rem;
+  width: 100%;
+}
+
+.container-plans {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  padding: 3rem;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px #888a89;
+  margin-bottom: 2rem;
+  background-color: white;
+}
+
+.container-plans h1 {
+  color: #3282b8;
+}
+hr {
+  background-color: #3282b8;
+  height: 2px;
+}
+.container-plans h2 {
+  display: inline;
+  font-size: 28px;
+  /* margin:10px; */
+}
+.container-plans p {
+  font-size: 18px;
+  /* margin:10px; */
+}
+.alignends {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown {
+  display: inline-block;
+}
+.dropdown .seeplansbtn {
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 18px;
+  font-weight: 600;
+  /* margin-left: 100px; */
+}
+.dropdown {
+  /* display: block; */
+  color: #3282b8;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.dropdown .content {
+  display: none;
+  position: absolute;
+  background-color: #bbbbbb;
+  /* min-width: 90px; */
+  margin-left: 2rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #888a897c;
+}
+.dropdown:hover .content {
+  display: block;
+}
+.pricebtn {
+  width: 90px;
+  font-weight: 600;
+}
+.dropdown .pricebtn:hover,
+.seeplansbtn:hover {
+  background-color: #3282b8;
+  color: white;
+}
+.content .seeplansbtn,
+.pricebtn {
+  cursor: pointer;
+  padding: 1rem;
+  margin: 0;
+  /* border-radius: 0%; */
+}
+
+.plansdisc {
+  margin: 1rem;
+}
+.plansdisc h2,
+h3,
+h4,
+h5 {
+  color: #3282b8;
+}
+.plansdisc p {
+  font-size: 1.5rem;
+}
+.planname {
+  color: #3282b8;
+  margin-bottom: 10px;
+}
+#goa5k {
+  display: none;
+}
+#goa10k {
+  display: none;
+}
+#goa15k {
+  display: none;
+}
+#goa20k {
+  display: none;
+}
+#goa30k {
+  display: none;
+}
+
+.aboutus {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-color: #3282b8;
+}
+.aboutus #main {
+  font-size: 3rem;
+}
+.aboutus p {
+  margin: 1rem;
+}
+footer {
+  text-align: center;
+  font-size: 18px;
+  padding: 2rem;
+  color: #eeeeee;
+  background: linear-gradient(#2c74b3, #205295);
+}
+footer p {
+  margin-bottom: 1rem;
+}
+.main {
+  display: flex;
+}
+.user-details {
+  display: none;
+  top: 10%;
+  left: 76%;
+  height: 60rem;
+  width: 35rem;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  position: fixed;
+  /* display: ; */
+  z-index: 1000;
+}
+.user-details img {
+  width: 200px;
+}
+#userprofilepic {
+  display: flex;
+  justify-content: center;
+}
+.place2visit {
+  font-size: 25px;
+  color: black;
+}
+.placeinfo {
+  display: flex;
+}
+#placeinfo2 {
+  display: flex;
+  justify-content: space-between;
+}
+.placetitle {
+  font-size: 20px;
+}
+.placedata {
+  width: 70%;
+}
+.placedata h5 {
+  font-size: 18px;
+}
+.placeimg img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 8px #888a89;
+}
+.mapsbtn {
+  height: 35px;
+  width: 100px;
+  font-weight: 550;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 3px;
+}
+.mapsbtn:hover {
+  background-color: #3282b8;
+  color: #eeeeee;
+}

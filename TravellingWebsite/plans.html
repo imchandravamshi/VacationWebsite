@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>GoJo vacation Website</title>
+  </head>
+  <body>
+    <div id="hello">
+      <header class="nav-bar">
+        <a href="#" class="logo"><img src="" alt="" />GoJo</a>
+        <div class="subtitle">Go to your destination with Joy.</div>
+
+        <ul class="menu">
+          <li><a href="Travelweb.html">HOME</a></li>
+          <li><a id="active" href="#">PlANS</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="#">BOOK</a></li>
+        </ul>
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="user-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+          <input
+            type="search"
+            id="search-bar"
+            placeholder="search destination...."
+          />
+          <label for="search-bar" class="fas fa-search"></label>
+        </form>
+      </header>
+
+      <div id="plansfeild"></div>
+      <div class="container-plans">
+        <h1>Goa Plans</h1>
+        <hr />
+        <p>
+          Goa, located on the western coast of India, is one of the country's
+          most popular tourist destinations. Known for its stunning beaches,
+          vibrant nightlife, rich culture, and historical landmarks, Goa offers
+          a unique blend of Indian and Portuguese cultures, due to its history
+          as a Portuguese colony until 1961.Goa is a paradise for beach lovers,
+          history enthusiasts, foodies, and adventure seekers alike. With its
+          laid-back vibe, welcoming locals, and myriad attractions, Goa promises
+          an unforgettable experience for every traveler.
+        </p>
+        <div class="alignends">
+          <h2>Select your budget</h2>
+          <div class="dropdown">
+            <button class="seeplansbtn">See plans</button>
+            <div class="content">
+              <button class="pricebtn" onclick="Goa5k()">5000/-</button><br />
+              <button class="pricebtn" onclick="Goa10k()">10,000/-</button
+              ><br />
+              <button class="pricebtn" onclick="Goa15k()">15,000/-</button
+              ><br />
+              <button class="pricebtn" onclick="Goa20k()">20,000/-</button
+              ><br />
+              <button class="pricebtn">25,000/-</button><br />
+              <button class="pricebtn">30,000/-</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="plansdisc">
+          <!-- 5k table -->
+          <div id="goa5k">
+            <h2 class="planname">Goa Tour Plan Under 5,000</h2>
+            <br /><br />
+            <h3 class="place2visit">Places to visit</h3>
+            <hr />
+            <h4 class="placetitle">Calangute Beach</h4>
+            <div class="placeinfo">
+              <div class="placedata">
+                <p>
+                  Calangute is a town in the North Goa district of the Indian
+                  state of Goa. It is famous for its beach, the largest in North
+                  Goa and a popular tourist destination.
+                </p>
+                <h5>Special</h5>
+                <p>
+                  Calangute Beach offers a plethora of activities for visitors,
+                  including water sports, sunbathing, and beachside dining. The
+                  beach is lined with colourful shacks serving delicious seafood
+                  and refreshing beverages. The bustling nightlife, featuring
+                  lively bars and clubs, adds to the beach's charm.
+                </p>
+                <button class="mapsbtn">See on Maps</button>
+              </div>
+              <div class="placeimg">
+                <img
+                  src="https://media1.thrillophilia.com/filestore/b8iqw6n62s37df5vqj13dpxr17cg_shutterstock_1850377780.jpg?w=400&dpr=2"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h4 class="placetitle">Basilica of Bom Jesus</h4>
+            <div class="placeinfo">
+              <div class="placedata">
+                <p>
+                  The Basilica of Bom Jesus (Portuguese: Basílica do Bom Jesus;
+                  Konkani: Borea Jezuchi Bajilika) is a Catholic basilica
+                  located in Goa, in the Konkan region of India. The iconic
+                  church is a pilgrimage centre and recognised by UNESCO as a
+                  World Heritage Site.
+                </p>
+                <h5>Special</h5>
+                <p>
+                  This Jesuit church is India's first minor basilica, and is
+                  considered to be one of the best examples of baroque
+                  architecture and Portuguese colonial architecture in India. It
+                  is one of the Seven Wonders of Portuguese Origin in the World.
+                </p>
+                <button class="mapsbtn">See on Maps</button>
+              </div>
+              <div class="placeimg">
+                <img
+                  src="https://blog.parrikar.com/wp-content/uploads/2010/09/basilica-1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h4 class="placetitle">Fort Aguada</h4>
+            <div class="placeinfo">
+              <div class="placedata">
+                <p>
+                  Fort Aguada is a well-preserved seventeenth-century Portuguese
+                  fort, along with a lighthouse, standing in Goa, India, on
+                  Sinquerim Beach, overlooking the Arabian Sea. It is an ASI
+                  protected Monument of National Importance in Goa.
+                </p>
+                <button class="mapsbtn">See on Maps</button>
+              </div>
+              <div class="placeimg">
+                <img
+                  src="https://www.navhindtimes.in/wp-content/uploads/2021/01/Taj-Fort.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <h4 class="placetitle">Dudhsagar Falls</h4>
+            <p>
+              Dudhsagar Falls (lit. 'Sea of Milk') is a four-tiered waterfall on
+              the Mandovi River in the Indian state of Goa. It is 60 km from
+              Panaji by road and is located on the Belgaum–Vasco Da Gama rail
+              route about 46 km east of Madgaon and 80 km south of Belgaum.
+            </p>
+            <h4 class="placetitle">Club Cubana</h4>
+            <p>
+              Get ready for a night of funky vibes and pulsating beats at Club
+              Cubana. Undoubtedly Asia’s number one Night Club, located atop
+              Arpora hill, this “Nightclub in the Sky” Club Cubana, is “the”
+              place to party throughout the week.
+            </p>
+            <h3 class="place2visit">Food & Restarurants</h3>
+            <hr />
+            <div id="placeinfo2">
+              <div>
+                <h4 class="placetitle">
+                  Ratna Sagar Family Restaurant & Bar (Calangute)
+                </h4>
+                <h4 class="placetitle">Fat Fish</h4>
+                <h4 class="placetitle">
+                  Just Lobo's Family Restaurant and Bar
+                </h4>
+                <h4 class="placetitle">Tropicana Beach Shack.</h4>
+              </div>
+              <div>
+                <button class="mapsbtn">See on Maps</button><br />
+                <button class="mapsbtn">See on Maps</button><br />
+                <button class="mapsbtn">See on Maps</button><br />
+                <button class="mapsbtn">See on Maps</button><br />
+              </div>
+            </div>
+            
+          </div>
+          <div id="goa10k">
+            <h2 class="planname">Goa Tour Plan Under 10,000</h2>
+            <p>
+              This destination is quite popular for its beaches, fusion
+              cuisines, Portuguese architecture, water sports, casinos,
+              nightlife and its natural beauty. It is perfect for relaxing as
+              well as for fun and thrill. So plan a dream vacation to this
+              beautiful place with your family or friends and create a thousand
+              memories to cherish and flaunt.
+            </p>
+            <h3 class="">Places to visit</h3>
+            <h4 class="placetitle">Calangute Beach</h4>
+            <h4 class="placetitle">Basilica of Bom Jesus</h4>
+            <h4 class="placetitle">Fort Aguada</h4>
+            <h4 class="placetitle">Dudhsagar Falls</h4>
+            <h4 class="placetitle">Club Cubana</h4>
+          </div>
+          <div id="goa15k">
+            <h2 class="planname">Goa Tour Plan Under 15,000</h2>
+            <p>
+              This destination is quite popular for its beaches, fusion
+              cuisines, Portuguese architecture, water sports, casinos,
+              nightlife and its natural beauty. It is perfect for relaxing as
+              well as for fun and thrill. So plan a dream vacation to this
+              beautiful place with your family or friends and create a thousand
+              memories to cherish and flaunt.
+            </p>
+            <h3 class="">Places to visit</h3>
+            <h4>Calangute Beach</h4>
+            <h4>Basilica of Bom Jesus</h4>
+            <h4>Fort Aguada</h4>
+            <h4>Dudhsagar Falls</h4>
+            <h4>Club Cubana</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-plans">
+        <h1>Manali Plans</h1>
+        <hr />
+        <p>
+          Manali, nestled in the Kullu Valley in Himachal Pradesh, is a popular
+          hill station known for its breathtaking landscapes, adventure
+          activities, and serene environment. Situated at an altitude of 2,050
+          meters (6,726 feet) in the Himalayas, Manali offers a perfect getaway
+          for nature lovers, adventure enthusiasts, and those looking to escape
+          the hustle and bustle of city life.
+        </p>
+        <p>
+          Manali is a paradise for nature lovers, adventure seekers, and those
+          looking for a peaceful retreat. With its stunning landscapes, rich
+          cultural heritage, and plethora of activities, Manali promises an
+          unforgettable experience for every traveler. Whether you're trekking
+          through scenic trails, indulging in local cuisine, or simply soaking
+          in the serene mountain views, Manali has something to offer for
+          everyone.
+        </p>
+        <div class="alignends">
+          <h2>Select your budget</h2>
+          <div class="dropdown">
+            <button class="seeplansbtn">See plans</button>
+            <div class="content">
+              <button class="pricebtn" onclick="Goa5k()">5000/-</button><br />
+              <button class="pricebtn" onclick="Goa10k()">10,000/-</button
+              ><br />
+              <button class="pricebtn" onclick="Goa15k()">15,000/-</button
+              ><br />
+              <button class="pricebtn" onclick="Goa20k()">20,000/-</button
+              ><br />
+              <button class="pricebtn">25,000/-</button><br />
+              <button class="pricebtn">30,000/-</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="plansdisc">
+        <!-- 5k table -->
+        <div id="goa5k">
+          <h2 class="planname">Goa Tour Plan Under 5,000</h2>
+          <p>
+            This destination is quite popular for its beaches, fusion cuisines,
+            Portuguese architecture, water sports, casinos, nightlife and its
+            natural beauty. It is perfect for relaxing as well as for fun and
+            thrill. So plan a dream vacation to this beautiful place with your
+            family or friends and create a thousand memories to cherish and
+            flaunt.
+          </p>
+          <h3 class="">Places to visit</h3>
+          <h4>Calangute Beach</h4>
+          <h4>Basilica of Bom Jesus</h4>
+          <h4>Fort Aguada</h4>
+          <h4>Dudhsagar Falls</h4>
+          <h4>Club Cubana</h4>
+        </div>
+        <div id="goa10k">
+          <h2 class="planname">Goa Tour Plan Under 10,000</h2>
+          <p>
+            This destination is quite popular for its beaches, fusion cuisines,
+            Portuguese architecture, water sports, casinos, nightlife and its
+            natural beauty. It is perfect for relaxing as well as for fun and
+            thrill. So plan a dream vacation to this beautiful place with your
+            family or friends and create a thousand memories to cherish and
+            flaunt.
+          </p>
+          <h3 class="">Places to visit</h3>
+          <h4>Calangute Beach</h4>
+          <h4>Basilica of Bom Jesus</h4>
+          <h4>Fort Aguada</h4>
+          <h4>Dudhsagar Falls</h4>
+          <h4>Club Cubana</h4>
+        </div>
+        <div id="goa15k">
+          <h2 class="planname">Goa Tour Plan Under 15,000</h2>
+          <p>
+            This destination is quite popular for its beaches, fusion cuisines,
+            Portuguese architecture, water sports, casinos, nightlife and its
+            natural beauty. It is perfect for relaxing as well as for fun and
+            thrill. So plan a dream vacation to this beautiful place with your
+            family or friends and create a thousand memories to cherish and
+            flaunt.
+          </p>
+          <h3 class="">Places to visit</h3>
+          <h4>Calangute Beach</h4>
+          <h4>Basilica of Bom Jesus</h4>
+          <h4>Fort Aguada</h4>
+          <h4>Dudhsagar Falls</h4>
+          <h4>Club Cubana</h4>
+        </div>
+      </div>
+
+      <div class="container-plans">
+        <div>
+          <h1>Kodaikanal Plans</h1>
+          <hr />
+        </div>
+      </div>
+    </div>
+
+    <!-- aboutus -->
+    <div class="aboutus">
+      <p id="main">About Us</p>
+      <p>
+        "Welcome to GoJo, your ultimate guide to exploring the world. Founded by
+        travel enthusiasts, we are dedicated to inspiring wanderlust and making
+        travel accessible for everyone. Our mission is to provide you with
+        detailed travel guides, insider tips, and the best deals on flights,
+        accommodations, and tours. Whether you're a seasoned traveler or
+        planning your first trip, we are here to help you every step of the way.
+        Join our community and start your adventure today!"
+      </p>
+    </div>
+    <!-- footer -->
+    <footer>
+      <p>
+        "Discover your next adventure with us! Explore destinations, find travel
+        tips, and book your dream vacation. Follow us on social media for the
+        latest updates and exclusive deals."
+      </p>
+      <p>© 2024 GoJo. All rights reserved.</p>
+    </footer>
+
+    <!-- linking javascript -->
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
